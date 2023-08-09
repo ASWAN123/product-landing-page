@@ -1,0 +1,262 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,700;1,900&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+header img{
+    height: 35px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header  nav{
+    margin-left: auto;
+    margin-right: 30px;
+    display: flex;
+    gap: 100px;
+}
+
+header{
+    /* border: 1px solid  black; */
+    display: flex ;
+    height: 50px;
+    align-items: center;
+    /* padding-left: 40px  ; */
+    /* padding-right: 40px ; */
+    padding: 40px ;
+    position: sticky;
+    top: 0;
+    background-color: #eee;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center ; */
+    gap: 50px;
+    width: 80%;
+    /* border: 1px  solid  black; */
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+form {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap : 15px ;
+}
+
+form input[type="email"]{
+    height: 25px;
+    width: 250px;
+    padding: 10px;
+}
+form input[type="email"]::placeholder{
+    color: #ddd;
+    font-size: 0.8rem;
+}
+
+form input[type="submit"]{
+    padding: 8px 8px 8px 15px ;
+    
+    border: none;
+    background-color: orange ;
+    font-weight: bold;
+    text-transform: uppercase ;
+}
+
+#features {
+    margin-top: 50px;
+    display: flex ;
+    flex-direction: column;
+    gap: 50px;
+    /* border : 1px solid  black ; */
+}
+
+#features .card{
+    display: flex ;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card i {
+    color: orange;
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid red; */
+}
+
+.details{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid  black; */
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+#video {
+    border: 1px  solid black;
+    margin: auto;
+}
+
+
+#pricing {
+    display: flex ;
+    gap: 30px;
+    border: 1px  oslif  green;
+    margin-bottom: 30px;
+    margin: auto;
+    
+}
+
+.price-card {
+    width: 300px;
+    border: 1px  solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.price-card h3 {
+    width: 100%;
+    background-color: #ddd ;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.price-card button {
+    background-color: orange;
+    padding:  10px 20px;
+    border: none;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 2rem ;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+#footer{
+    height: 80px;
+    /* border: 1px  solid  black; */
+    padding: 10px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+.footer-btn{
+    display: flex;
+    gap: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+#footer span {
+    color: gray;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    header {
+        
+        height: 100%;
+        gap: 20px;
+        align-items: center;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        margin: auto;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pricing {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #video {
+        width: 100%;
+    }
+  }
+
+
+
+
+@media screen and (max-width: 550px) {
+
+    header {
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+    }
+
+    main{
+        width: 100%;
+    }
+    #nav-bar {
+        flex-direction: column;
+        margin: auto;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pricing {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #video {
+        width: 100%;
+    }
+  }
